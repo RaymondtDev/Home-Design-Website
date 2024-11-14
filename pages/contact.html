@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/pages/contact.css">
   <title>Home Designs</title>
 </head>
 <body>
@@ -26,17 +27,44 @@
     </div>
   </header>
   <main>
-    <div class="contact-form">
-      <h4>Enquire</h4>
-      <form id="mail-form">
-        <input type="text" name="name" id="name" placeholder="Enter Your Name..."><br>
-        <input type="email" name="email" id="email" placeholder="Enter Your Email..."><br>
-        <label for="message">Enter Your Message:</label><br>
-        <textarea name="message" id="message"></textarea><br>
-        <button type="submit" id="submit-button">Send</button>
-      </form>
-    </div>
-    <div class="map-section"></div>
+    <section class="contact-section">
+      <div class="contact-info">
+        <h1 class="c-title">want to know more?</h1>
+        <p class="small-text">We'd be happy to answer any questions you have! Fill out the form or reach us via email, phone, or whatsapp. We're available to respond to your enquiries every work day (Mon-Fri) from 8am-6pm. <br><br>
+        We're looking forward to hearing from you!</p>
+        <div class="socials">
+          <div class="social">
+            <img src="/assets/icons/icons8-gmail-48.png" alt="email-icon">
+            <a href="mailto: raymondtdev@gmail.com">raymondtdev@gmail.com</a>
+          </div>
+          <div class="social">
+            <img src="/assets/icons/icons8-phone-48.png" alt="phone-icon">
+            <a href="tel:+27661331990">066 133 1990</a>
+          </div>
+          <div class="social">
+            <img src="/assets/icons/icons8-facebook-48.png" alt="facebook-icon">
+            <a href="https://web.facebook.com/people/Phahlamohlaka-Raymond-Thabiso/pfbid021ynaXwjnHvrHsCyw1sfoZ1xQ32XU2au4q1gqPmiAYC8jeUYiqeJgN2uVjpNKYXGzl/" target="_blank" rel="noopener noreferrer">Phahlamohlaka Raymond Thabiso</a>
+          </div>
+          <div class="social">
+            <img src="/assets/icons/icons8-whatsapp-48.png" alt="whatsapp-icon">
+            <a href="#">066 133 1990</a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form id="mail-form">
+          <label for="name">Name</label><br>
+          <input type="text" name="name" id="name" placeholder="Enter Your Name..."><br>
+          <label for="email">Email</label><br>
+          <input type="email" name="email" id="email" placeholder="Enter Your Email..."><br>
+          <label for="message">Message</label><br>
+          <textarea name="message" id="message" placeholder="Enter Your Message..."></textarea><br>
+          <button type="submit" id="submit-button">SEND</button>
+        </form>
+      </div>
+    </section>
+    
+    <section class="map-section"></section>
   </main>
 
   <script src="/mail.js"></script>
